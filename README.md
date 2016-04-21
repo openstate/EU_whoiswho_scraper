@@ -1,3 +1,12 @@
-# Scrapy spider to scrape the data of people listed on the EU Whoiswho website
+# EU Whoiswho Scraper
 
-`scrapy runspider spider.py -o data.json`
+Scrapy spider to scrape the data of people listed on the [EU Whoiswho](http://europa.eu/whoiswho/public/) website.
+
+## Instructions
+* Clone this repository or simply download the python files
+* Install [Scrapy](http://scrapy.org/)
+* Run the following command to start scraping (the whole website takes 9 hours to scrape!):
+```
+    scrapy runspider spider.py -o data.json
+```
+* (optional) run `json2csv.py` to convert the results from `data.json` to `data.csv`
